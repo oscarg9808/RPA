@@ -1,0 +1,278 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="interciclo" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="928,2437" sap2010:WorkflowViewState.IdRef="interciclo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="interciclo" sap:VirtualizedContainerService.HintSize="476,2232" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Image" Name="captura" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Abrir aplicación 'netbeans64.exe Apache'" FileName="C:\Program Files\NetBeans-11.3\netbeans\bin\netbeans64.exe" sap:VirtualizedContainerService.HintSize="434,396" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="f63949189f0edf4b3b0b254f3af060c1" Selector="&lt;wnd app='netbeans64.exe' cls='SunAwtFrame' title='Apache NetBeans IDE 11.3' /&gt;">
+      <ui:OpenApplication.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(10)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(f6)]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b76d9960-c334-4679-b89f-a503bd4b43e4">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenApplication.Body>
+    </ui:OpenApplication>
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(10)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'root pane'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target Element="{x:Null}" Id="ebd7d9b0-fa82-49a6-bb8c-a48bfa29a913" InformativeScreenshot="2be8d6c69e65598ae9a2ca7e0da298cf" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java cls='JRootPane' role='root pane' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="2, 1, 51, 23" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="%[k(down)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3c1b2317-0876-46dd-abb9-4974df01c6d5">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAiCAYAAAAjzOVkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARGSURBVGhD7ZpdbxtFFIb3JyWx3X9C0jhNoBJRoWoRVRsplmU7tkkJgnxcBEFUJ7hNiwI3UEoV1VJkpWm+lAsgqIWiplag+eiH26SlrZIiXuZd79iza292DUZwMRePsnPOmTMzz9qO5LVx63YBmsagZTYQLbOBaJkNRMtsIAfKXFpdw7eLv+DyvMYJvdCP6qumzJUf72L4m5s4ffEHjQf0RF/0ViVzZfUuYl+s4owoTGWvYXh8CqPnPsPH5yY0FvRBL/RDT/RFb1Uyh67cNAsGx7/ElekcNrfuY29vH69e/aGxoA96oR96oi96s8nkZwBfumlh/PLVa3j+4qXGA3qiL3qzybwqPlQZHMxMYa2wjp3dZxoP6Im+qmR+daMkc+TTDB4Vn+DJzlONB/REX64yh0Y/QfHxjsYn9OUq88ORUTx4+Pj/yXI/QqF+LNfK/UfQl6vM9wdHsHW/6JuF1CEY4oALjvjnnQaCqRVb7B+z1I9gjbXsrCAZOoTkUq1c46EvV5npgY+wsfXAPwtpBI0uXLTFp3DECKFvQY01AK4VTONGrVyZZfQF/4W1XaAvV5mJ/gH8em+7DhYRDxoITyqxyU4YwRSuO2oMg4QQn7PicykERF28g/FOXCjXK7DGnGdh9b2eCFVigkBiUdSr61jIfdj6KHsQXDDXL1HqU8l5QV+uMqN976GwvlkX+XgQRviSbRyIz5fH2bDYpByfPwIjkESe17NJ84Dt50t11cwjFlDyrJdzVcw+QcRmOeYceS1x9FH3oF6vX0JM2bcf6MtVZm8siTuFe/WRT6DF6MCEOZ5DVBwmmpf5SRwu5+TYynNeIIGZcs6Bra81rlmvrulcX1A1T9lDtkPIPGAPHtCXq8wzkRhu31mvk1lEWgy0TYjrmTiaW+LIyRzH5beXJIDITI1aJxNhGM5eyjgXDVT3NPciry2cfdT9WteyTynmH/pylfluT6Qcq4fpiDhYW9b82xTJK7ksWo12jCm1ZXIxNDXHMF0rR5x5dZxpF4eXffPobQ6gN+e8tuA82x64J0eNwDyD6K/GvKAvV5knTvXYin1jHrQdrc6DCMbaDJvgsTbrYF4yHYeWh2W9vHlmnSmrUsf1WjOyB6FgJcYbUe7TXtkv47KnT+jLVeZbJ0/Ziv1T2rDcZM2cfEuqEg6UKTBfgaV5TeImVOop2urnvImmXJmz6tWY+ipV+tviPqEvV5ndb78jPlg3ND6hL1eZR7uP47fNRxqf0JerzNffPI6N7SK2H+5qPKAn+qqSKb/PfONkFN+t/ozizguNB/REX1Uy5Tftx9LjOPvBMHZ/39d4QE/0VSWT8FnG6cnv0XUiirMDQ7j10xqePd/Hy70/NRb0QS/0Q0/0VfUMiMinkyzoTmbQcawHreGjeO1wl8aCPuiFfujJ9emkKVQ/N/fNgc/NVdRfdHwt/tNrStT1iw7N30PLbBgF/AWSC2klv2Ti4AAAAABJRU5ErkJggg==" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bba157c0-a543-4829-876d-2e4cf7c0a0cf" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Realizar captura 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[captura]">
+      <ui:TakeScreenshot.Target>
+        <ui:Target Element="{x:Null}" Id="75c2d6e0-0151-4f5b-8395-dc1d419125e5" InformativeScreenshot="4a6164ba97a5ff11bf28e2eb791920cb" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="8, 10, 1535, 824" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TakeScreenshot.Target>
+    </ui:TakeScreenshot>
+    <ui:SaveImage DisplayName="Guardar imagen" FileName="C:\Users\opizarro\Documents\ProyectoFinalSimulacion\imgs_interciclo\1.jpg" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[captura]" />
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(3)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMdSURBVDhPrdNpSFRRGMbx80kpt5Sy3K1xrQbCpaIPuXyIzNJCNCURNEUKA4XCsgVSITKoMHMNZRSXUnJpdMZ10lzLpUbLxKhABUsyjVLT9Om8V+amSWLghR8z98x5//deZoYNjYxivbH3H4ex3tjbwQ8gA5xa/Rrx4RHws7PDfsbWhPbSDM1Sg7DeN4MgXV1qBNnaIW6vExRnT6PtUgwXjbaLq1OcCUOcq5MwSw1qse5X/SCJYeG47CRF07mIfwhfFc1Sg1qso1MNEmJjg/IAX9SHBYkaIoKXnYtCA6GKDBFeNcoCfIRGR2cvWGvHSxB/HW1Unzwmqgvxx/hAP/oyU1AdwNeWeFdShLE+NWqD/fj5UYGSowa1WHNbD8gpHS3IvT1ESj4wMTKMhfl5dN5MENd7U26Djm9jn6EICVgy4y40qMWaWrtAQvlVSt1dRSVuzkj28sDkp1HMz82hJTYa7VcuCBf5Pj6Ouz6HIDuwB6VufL+bi4Aa1GKNzZ0gkbpaKHZxXCbfyR7JRzx45AvmpqcxNzONqclJJPseRqrURtjzyNlBRA1qMVXTc5AovlDgaLHI4Y8HdmYoPh8tPDIdFQnXcEtiwj8zX4Ea1GL1jR0gMXpakFkYriD39sT0xFfhLn/N/sTs1BSUgb6QmW9agRrUYrWqNpBYfW3ITPWXkXu5YYYHFxYWkM//EEVREcJ7CtfwX4HMVG8ZalCL1TS0glw14FETXVGF5z4hSEfdnSTc52tp23ShuHFdWJud+oFKr4PI5TENalCLKeuaQeINN6LA0lBUZG+Goe4X6K2sQKalkbiezh+zPS8HQz1dyLI1QaGVkYgayroWsKqaZyBJjhIUWm9GscRYkL19CxL5N5y701Jc00iTbEXCbglkfI9mjWapQS0mr24Cued3AplmBihzMBOV8Ltder5U8V+f0Sw1qMWeKJ6CZGXKkLJrB3LMDfGYb5JLrVAptV4V7aG9NEOz1KAWK69UgeQ9LEd6ajbS/Y4jQypBhvGGteF7aYZmqVFepQIrlddDI7ewDBnZ+UjNyvsvNEOzi516/AaIeDOzh3PCxAAAAABJRU5ErkJggg==" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4342b42-e3d6-4680-b0cf-296a55c5596e" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAUCAYAAAAeLWrqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKDSURBVFhH7ZL9ahpBFMXnXcZ3ie5qn6PB6hrbRwgEY01UDH2AEghp01CR0L8KxRKJaaM02I9AiLShbfqRkJKmVpHT2c26zs7MbiRaWsL+8YOZe+495zor6XQ6CBgf0u12ETA+pNfrIWB8SL/fR8D4BP/ICUF+dX5D4u09xGgIVOIOnqj6/wXWjv/PPuTs5zkkWktsydvYEOqt0g3Q2BJaQj3gHOT0xxkkdkuI0jQql9Y3kHL+rWI/p0XTSEVjKO6yuulh3fkZH59K2q4L2qi7WHklFFMDLYRUZTDjM2fila2AHJ+cQqJZhE5nUBbqjUKMPUoRDfteNkLQC6+GmlFxenntuDzDFokh32RnyzsEo3zRJ/a6fSowuD1cmrCjlDfY085TasLcyNkKyNdvJ5DYKVjhw69hoxfw0ukrI0mjWNzh7ymsS2eTJhZ1u9fy5rXLfHiNw+Uj5nFzYp40d4VsBeTz0XdIbOehUQNrg/sjgz1kFLltrufoMRLSY9s95ryWR93pbSCncRrv7edj6la/V932kTx98lz3K2YrIIcfv0BiawERmsQqV6vd1ZkZX1tHXOgZImovkNV0ZLfYWfL28xF4mATVFlAzzy4f0cO8e+T5zvnAZysg7Q+fILGZQ5gmsOKq15GJsC8TX3NqK/EQwvP1i/tqAjSSQ9VLYz8ss8nOCm9PH8HTdRd8PD3EvFHn/LIVkP32ISSqWRZ2C8vKOgvO1OzaA9x0/voa5qp8P6dNZzEXtnWlt7fP8vSgbsLNST68h0+f79yI2QrI3v57/HWezWOKxnFfpV0TyJu9NibPc8xO8V8zgtmnqr7rA3n97gAB4xM85IQIHnJCBA85EQ7wB1BPOzKGLnxcAAAAAElFTkSuQmCC" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccf1c0c5-80c8-4772-84f1-0086f80c87cd" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="%[k(down)][k(enter)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3c1b2317-0876-46dd-abb9-4974df01c6d5">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAcCAYAAAB8pKH7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASISURBVGhD7Zr/TxN3GMfvT2pz/VcKlC5kJiNGo9sydCDtSUsXlrkwZsIipMA6wET3m3PzCygowTHjD9sgsFIthUJbEKswpwZcfPt5PtdPe3e9o1eSsfvhfngld5/n+TzP555Xr5CAtLScgYszceU4GJ2c3+bT+HkuhWsPXP4PaPbkQCfn0cIK+n5aRNv4ny4OgFyQE+nR/AqUqws4wxa7E7fRN3wF/fHv8V18xOUIoZnT7MkBuSAnUt/1RX7TO/wjrt+cQL6whb29fbx9+6/LEUIzp9mTA3JBTiR6jWLM1rVfbuPV6zcuDoBckBMup3foCtKZNezsvnRxAOSCnHA5FweG8az4Ai92/nZxAOSCnHA53/RfQvH5rouDICdcztcX+/F0+7mLgyAnXM6Xvd+isFV0cRDkhMv54kIv8pvbton4JAQvP9Wt5X6NweeLYbagX7cL3y+1YLzG/lzhIe8vSRJ80YemOQdht48R0df43P8V5ITLifZcwHpuyzYzER/kyFzNtXrIznZDlj7A6MamaVxgN8+Kw+7PbszhPJPTPHa4vvVCTrgcpbsHq9mCbTL3o5DlKKbX8ur92gMosg/KfXF/GQH2yaZPtyQFkRB5fF8QAVm/Xo6V1kR9JSBqSAiMsnVdXbWfVa/qc/gQvjdelav2FWtqH9P9pXOL+IF9R4PlesaYXcgJl9PZFUN6NWebJ5lZhJiM0PSGej8dgVeO4E5GvR9hQ/Uqs/z6juKDFBir5LEDNybUPC1qLIgRVkPkiRpPEuxhS/W1eRSz7MXPWOklakxOdVX6ZMbQyKTpnsOiNt+vOXtVTJyP16zU0J6pHsgJl/N5qAuPV9brYjIkwxuaqbpOpUfZ4WR03s1q7psxlM4idfc8e3j1WtQRaGPGPKvYYXpZrfOYdr/mWo3NoNPL5IyYxSrn0F5ra9cLOeFy2jrCSD5eq4u/JhV4vApupe6hwyujY3JVXU/9AH/5lRaocb5HCmAwpeZW1SvFjHlWsZq9+Pn0vYy1icFG7X7zM4g8/5DJ+Ywz4HH9eUQNu5ATLueTMx3lvyHYZTE5hXZPEwYmwvB4wriRXCmtJ9jA2HrpXreHcm3EjHlWscP0qt7PBh436WOorT6vmlsdo3sZ7RMm54g3QdLMxy7khMs59elZ04Ra3Dgnw9/QBM+5Kd36QINUXtMezmpgPE87GEPeQTHLXpphamtcuhWq0acy5KraGpGWfQ0yjPd2ISdczonTn7FXk74m6mNpgl5fepiMfn1Z/USK11rE1Xz2dcCaa/ONMWPegTGLXlaxpeVptLOfHfzri9W4yT5gapzhDcDPYv64qC1yzWLa2pXzEINMXLmmIWYXcsLltJ74mP2GkHdxEOSEyznWehLr+WcuDoKccDktH51EbrOIze1dFwdALsgJl/Ph6RB+n0+iuPPaxQGQC3LC5RyPDaPnqz7s/rPv4gDIBTnh/+DRNvYHWk6F+eJSMo2Xr/bxZu+dyxFCM6fZkwNyQU7K/xpFN63RIQSPn0VD8zH4m1pcjhCaOc2eHJAL5eoC3gMrM/Ui0xwYhAAAAABJRU5ErkJggg==" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f61eb01-32e1-4de2-80d7-a037e0b44e7d" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(5)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Realizar captura 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[captura]">
+      <ui:TakeScreenshot.Target>
+        <ui:Target Element="{x:Null}" Id="75c2d6e0-0151-4f5b-8395-dc1d419125e5" InformativeScreenshot="81e3e94554ef0e3d238dbf40c7031da2" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+          <ui:Target.ClippingRegion>
+            <ui:Region Rectangle="8, 8, 1535, 828" />
+          </ui:Target.ClippingRegion>
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TakeScreenshot.Target>
+    </ui:TakeScreenshot>
+    <ui:SaveImage DisplayName="Guardar imagen" FileName="C:\Users\opizarro\Documents\ProyectoFinalSimulacion\imgs_interciclo\2.png" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[captura]" />
+  </Sequence>
+</Activity>

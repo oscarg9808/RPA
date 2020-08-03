@@ -1,0 +1,88 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ActivarVPN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,465" sap2010:WorkflowViewState.IdRef="ActivarVPN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ActivarVPN" sap:VirtualizedContainerService.HintSize="376,260" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'explorer.exe'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAdCAYAAADPa766AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZXSURBVFhHlVZbbJRFFN5tgbaASilGAUWrKcUCtt3ddm/dLV1bbKGVa6+AhCBqEEUFYsFobKL1hRiJxofyIg9VifbBRB4UAwFLCho0GjQRbaCYFgXaUii9t5/n/OefndktGp3kZOY/c+acb85tfoevoAj+UISoCN7gMmtWJHtqP2J8334/WFgcXWs5tTZ5RQiEHzPmCBzqoAYUsQApASHZYxklZypSPHP/n0jp1eeEHEqhpvhDk/m3+1be5DPKmJYTHZNBCp/X5BFTWCM20ap9tcezN1iI/GARXP7lyPGXISewAu5AMfICywyDehagsXYUj9fR0CgjQlpBPKB8fxhLvGWYH27ArNLPMaPsGFLKv0HKylbMXHEUqcS7P1SPHO/tvKJmvea8soGoDbmxRj5ZiccXxgL/dkx74mc41/fCUT0MR+0YHHUTQrWjFi9hfTeSy87gQXcV8gOF1nm5qNjhy6lvFVLbIwqMTtp4Tyz1r8Jdy5rgrOoXg3WAk2jak0D6TuC+HcCUjbD4FqiaEZK9ibTCd5BL4fMViEHWK9Wl7TDZ5avjLyRCir/UX4EZpV/CWXPLMsIApmwC5j0HvP4pcOY34MQvwNYmYNZTQKIByFnVi7RIE1w+U//kUo+GRgBp48KnnCDXzgm9RSD6ycAEksgDc7cDTx8Ezl4A+geB8XFgjKi3HzhNoDa8D8zeJt5K2MBgejDXtzMaBqXbdEJMjigw5pzhWQXnum7M3DKGuveAz84AXT3A0IgAiB8MaHAYOH8ZaD4FVOwHkjaNImHtVSzKK4cvBozYYYB2H9EuUptMLm8Y00uPwVk7jOVvCwA2NDFhW/2XwTIs+8NFIHMX5Uz1EFJLPqLy5uRV9qRa+cJGssYCYeQZ7lVIXN+JhLoxbPoA6CHX/9/x+5+Aex8lNiV4cvm3yPaV2rbEnkqDSVWjKD8Qxrzgq0io7KU4A1UHgO6btnYa4xQXpgnDPbxWfDV+pRBl10uFJa65gMzARssDCkAcEEW6rlk4bfkhStJBOAlI5E3gr+uifGxsDMePH0draytGR0eFSWNoaAgtLS04d+5cFOCPHUDGS1JFzsrrSA/tsHPQLBD70dOlJBsMJs9fiNTHW6wGxbfJ3AX80W3HnoA0NzejqakJIyOUtfYYGBhAY2Mjjhw5YgFh2VPngbuftYFUDyI9vNvSzyAUIAuIco1iyHcEedRFZ5ewR4YsJdO3SL9gr7MR9gSTCo8KC/MYKH9zsn7SBkylMraAVPUhveB5A4DYtIAohukmJu6Ec4P7qJX3WEq4gb3yMTCsI2EZ6+rqQnt7u0V9fX32jgwu8W3UbzjHWEfi6ovI8NVNAsLfFhC1oQUETLp7LRLXXbbeE1a24AVK2BsSHh4MpK2tDfX19WhoaEBHByWEPcZJ5grhmk/dl0PLz0JS+VkszlPtXlJBRSDmD41nE9Sj7gBSyk6SEnrcSNlU8sr+L+SmanAoGEBnZ6cVEh4MtH8IqCcPRt8fCvGdxYfhyg/Z9oSiQASAkGKqNbf3B3LWwLnumuUVvtnCl6WNj5JN0zNMspbwfXiCkvQZ2xs13Fmv4CFXhe0N8/JiK/roMfFawIhgIBxBjieAWaF3qXoGJc50w5JGoOOqgDEHg+Bq/q4deGS3yg16a6pvIc27F668IFWM/Bawfm3bLl9NsUCY+AaLPKVIKf2aKmjAUsxgsvYAh6kiLl2jUJHxAft9OXRS+kYURGUf/T4cxGJXQbRHmTYYDJMVGt4wPWMC45m7bIanAjMLD1r/GJx4bOiOrUDwDaCGHsNK6rw5e4HkzRQOBlFD/afqBlLDB5Dl5t6k3hjThp4Nj2gAAipW0OMrQFZuEHM8LyJh9SU4Ksk7BMjJtybDFtGb5Kgdob1bmFL+E+7N3YwlrmD0L02T6NSeISDqQ3tFwPC37OnMZoU5Hj8ezi5Gmv81epmPImnlaUyr+J7oLJJXttE/7Fe4x7sHmdkhqpAgdWhdJaZO/ZcWDU2sAJMKkw6X8BVgDhUb4fLOckWw0FWCzNwSLHYXIpuS2+MNWaDN30Nlh9dqNnVaOWIy1cyITQV6T27De0ycgCbJGSF9Tn8rEOp9U/JRIMJQYGQtikyA5r5QPMh444pMgEqWeQpcNEdigcj8X7wSeyb2PFM8MGVYn2VARfgb/zRjG+KTpt0AAAAASUVORK5CYII=" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cbd5f879-d605-4d4d-bb47-f5d228a068a3" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(8)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+  </Sequence>
+</Activity>

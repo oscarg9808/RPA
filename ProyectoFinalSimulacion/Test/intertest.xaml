@@ -1,0 +1,1223 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="intertest" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="881,11536" sap2010:WorkflowViewState.IdRef="intertest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="intertest" sap:VirtualizedContainerService.HintSize="527,11371" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'explorer.exe'" sap:VirtualizedContainerService.HintSize="485,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="562a5145-0f18-4ccc-927f-30362934e219" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(10)]" sap:VirtualizedContainerService.HintSize="485,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <Sequence DisplayName="Básico" sap:VirtualizedContainerService.HintSize="485,9262" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_71" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="17" OffsetY="11" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d232d71-c38d-4763-ae7d-8c2aa7c71316" InformativeScreenshot="33ed543c42e83c18e1ccea049e95ac50" Selector="&lt;wnd app='netbeans64.exe' cls='SunAwtFrame' title='Apache NetBeans IDE 11.3' /&gt;&lt;java name='org.openide.awt.ToolbarPool' role='tool bar' /&gt;&lt;java name='Build' role='tool bar' /&gt;&lt;java name='&amp;amp;Run Main Project' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  Datos'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_72" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="12" OffsetY="7" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="560d14ba-2eae-4dbb-a3c5-3585c5344631" InformativeScreenshot="8b7e097ea8d6db2e343991e9aeb9c61f" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_73" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="24" OffsetY="9" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60cec369-a265-415e-8262-7f31d97aa30b" InformativeScreenshot="746b393670ad41b6cee00348259cfed4" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos' role='menu' /&gt;&lt;java name='Actualizar Datos' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  Datos'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_74" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="22" OffsetY="7" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6c853743-992d-462e-a0a0-d5239f598cd7" InformativeScreenshot="8b7e097ea8d6db2e343991e9aeb9c61f" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_75" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="29" OffsetY="9" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c7f29266-98aa-46f6-bdbf-90ae4665c22b" InformativeScreenshot="3aead65181b4913fdf87b4f9630a0a11" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos' role='menu' /&gt;&lt;java name='Datos Covid-19' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Ver datos'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_76" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="32" OffsetY="11" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="daf7d74e-f067-4968-8bb0-3c3be055b76d" InformativeScreenshot="9fd4bfd571bec466233ad1c233c0ae4d" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos Covid-19 Italia' role='internal frame' /&gt;&lt;java name='Ver datos' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'explorer.exe'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ba46d9f2-6e72-4de0-b04f-3ea21ae52bcc" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'drop down button  Abrir'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_78" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="7" OffsetY="15" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95969460-4a84-403b-87bf-639470875a29" InformativeScreenshot="bcbf65559b289208c2dab1acd62b264d" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperToolbar' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Modo' role='split button' /&gt;&lt;ctrl name='Abrir' role='drop down button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_79" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="80" OffsetY="11" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ec853ac1-dc58-4426-9a81-637f0c5fa43f" InformativeScreenshot="e5b58c90fb146dee5f5473b2eec6110b" Selector="&lt;wnd app='snippingtool.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl automationid='40009' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_80" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="22" OffsetY="19" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9f7443ab-0413-4468-a4c3-77250c01930c" InformativeScreenshot="c70c0b5183c4ae64fc7b8a8102acc8e0" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Guardar recorte' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="1.png[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d7e20c5b-c3b3-4ed4-b2cd-2cec7a718da4">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_81" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="38" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="648efedb-1b87-42b7-99f1-35fb6a56f005" InformativeScreenshot="c9386e387de331696892c95401d41834" Selector="&lt;wnd app='snippingtool.exe' cls='#32770' title='Confirmar Guardar como' /&gt;&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_82" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="32" OffsetY="15" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd76bcbe-95c1-4af3-8636-112f26d21eb3" InformativeScreenshot="b03786f0b17302f62fb32fef4f644b33" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;ctrl idx='1' name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_83" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="10" OffsetY="6" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d998f03f-ed21-4801-9874-283070955d67" InformativeScreenshot="aad6602a4509b9f5621ca99fc1ce77df" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Datos Covid-19 Italia' role='internal frame' /&gt;&lt;java name='InternalFrame.northPane' role='AWT component' /&gt;&lt;java name='Close' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  Regresiones'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_84" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="23" OffsetY="9" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="356df75b-777f-496d-b17b-ab21b4b79ace" InformativeScreenshot="d9b42b84c01c8722e1a27f7300979d94" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item  Polinomial'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_85" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="28" OffsetY="2" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a19b5702-5de9-413b-8628-7ad5ae27762f" InformativeScreenshot="e12fd9ffa3eea2e3c2f689d77b943d47" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;&lt;java name='Polinomial' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'toggle button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_86" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="43" OffsetY="12" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2370b2d1-02ba-44f7-b1bb-96c949733ea1" InformativeScreenshot="d0b1f11e3314f3339a914cc764770a7b" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Polinomial' role='internal frame' /&gt;&lt;java name='Ver Infectados' role='toggle button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_87" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="20" OffsetY="25" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f61dae48-db9b-48b0-84f0-0349de64e1b0" InformativeScreenshot="74c51570dbf5c795fb400961bad9ce80" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='Aplicaciones en ejecución' /&gt;&lt;wnd cls='MSTaskListWClass' title='Aplicaciones en ejecución' /&gt;&lt;ctrl name='Aplicaciones en ejecución' role='tool bar' /&gt;&lt;ctrl automationid='{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'drop down button  Abrir'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_88" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="6" OffsetY="13" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b10fc25a-e0fa-4e93-9bc0-90aeda122be2" InformativeScreenshot="bcbf65559b289208c2dab1acd62b264d" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperToolbar' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Modo' role='split button' /&gt;&lt;ctrl name='Abrir' role='drop down button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_89" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="62" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18ed1f15-cf9c-4019-a5e6-1a0d0ede5441" InformativeScreenshot="e5b58c90fb146dee5f5473b2eec6110b" Selector="&lt;wnd app='snippingtool.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl automationid='40009' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="20" OffsetY="21" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c61bffe6-6b6d-4d74-b29d-62ea8a08f2bd" InformativeScreenshot="c70c0b5183c4ae64fc7b8a8102acc8e0" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Guardar recorte' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="2.png[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d7e20c5b-c3b3-4ed4-b2cd-2cec7a718da4">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_93" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="45" OffsetY="14" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b9deb2c-6898-4f21-9693-f6766ee0ce9d" InformativeScreenshot="2f600be9ca5cee8d7567f512f9264f91" Selector="&lt;wnd app='snippingtool.exe' cls='#32770' title='Confirmar Guardar como' /&gt;&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_94" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="19" OffsetY="12" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5a41684b-1139-421e-b8f3-28c0c5e89cb8" InformativeScreenshot="b03786f0b17302f62fb32fef4f644b33" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;ctrl idx='1' name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_95" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="13" OffsetY="6" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="faa2fe0c-e609-4a3d-bd5e-987eb5738160" InformativeScreenshot="f1d8823b5e944ad6bdc7ee79700fcc82" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Polinomial' role='internal frame' /&gt;&lt;java name='InternalFrame.northPane' role='AWT component' /&gt;&lt;java name='Close' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  Regresiones'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_96" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="20" OffsetY="4" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b72aa17-e13a-40d5-b759-8abfdc5dfbfe" InformativeScreenshot="d9b42b84c01c8722e1a27f7300979d94" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_97" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="26" OffsetY="9" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d694d844-9b14-4272-be4d-51b00eb0ca5d" InformativeScreenshot="c83b57f09be6b40ff445a053a3a0f106" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;&lt;java name='Probabilistico' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Calcular'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_98" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="17" OffsetY="14" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="99bd18f1-e369-4b92-b389-9fa818ee5abb" InformativeScreenshot="22e39ff381a36879cc9541e7d88c4091" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Probabilidad' role='internal frame' /&gt;&lt;java name='Calcular' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_118" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="20" OffsetY="25" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f61dae48-db9b-48b0-84f0-0349de64e1b0" InformativeScreenshot="74c51570dbf5c795fb400961bad9ce80" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='Aplicaciones en ejecución' /&gt;&lt;wnd cls='MSTaskListWClass' title='Aplicaciones en ejecución' /&gt;&lt;ctrl name='Aplicaciones en ejecución' role='tool bar' /&gt;&lt;ctrl automationid='{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'drop down button  Abrir'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_119" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="6" OffsetY="13" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b10fc25a-e0fa-4e93-9bc0-90aeda122be2" InformativeScreenshot="bcbf65559b289208c2dab1acd62b264d" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperToolbar' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Modo' role='split button' /&gt;&lt;ctrl name='Abrir' role='drop down button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_120" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="62" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="18ed1f15-cf9c-4019-a5e6-1a0d0ede5441" InformativeScreenshot="e5b58c90fb146dee5f5473b2eec6110b" Selector="&lt;wnd app='snippingtool.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl automationid='40009' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_121" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="20" OffsetY="21" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c61bffe6-6b6d-4d74-b29d-62ea8a08f2bd" InformativeScreenshot="c70c0b5183c4ae64fc7b8a8102acc8e0" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Guardar recorte' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="3.png[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d7e20c5b-c3b3-4ed4-b2cd-2cec7a718da4">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_122" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="45" OffsetY="14" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b9deb2c-6898-4f21-9693-f6766ee0ce9d" InformativeScreenshot="2f600be9ca5cee8d7567f512f9264f91" Selector="&lt;wnd app='snippingtool.exe' cls='#32770' title='Confirmar Guardar como' /&gt;&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_123" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="19" OffsetY="12" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5a41684b-1139-421e-b8f3-28c0c5e89cb8" InformativeScreenshot="b03786f0b17302f62fb32fef4f644b33" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;ctrl idx='1' name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'java.exe Modelo'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_99" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target Element="{x:Null}" Id="72653018-669f-4968-b9af-5b4cd6d9de8a" InformativeScreenshot="bd1a6eec491dfb8e7f9f1f8072ea1b45" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Modelo Probabilistico Confirmados' /&gt;">
+            <ui:Target.ClippingRegion>
+              <ui:Region Rectangle="234, 16, 2, 87" />
+            </ui:Target.ClippingRegion>
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'java.exe Modelo'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_100" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target Element="{x:Null}" Id="5b97dbee-c8b7-4369-9cfb-2f8db12b9064" InformativeScreenshot="51603d5fc6418635b67d8e99348364dd" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Modelo Probabilistico Confirmados' /&gt;">
+            <ui:Target.ClippingRegion>
+              <ui:Region Rectangle="220, 17, 0, 114" />
+            </ui:Target.ClippingRegion>
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'java.exe Modelo'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_101" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target Element="{x:Null}" Id="caacf86d-2cfe-4812-b3b8-07c2750c1c53" InformativeScreenshot="a1e91da47e330699816dc266c1f6db9e" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Modelo Probabilistico Confirmados' /&gt;">
+            <ui:Target.ClippingRegion>
+              <ui:Region Rectangle="220, 16, 3, 143" />
+            </ui:Target.ClippingRegion>
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'java.exe Modelo'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_102" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="574" OffsetY="13" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b29cf7f-dc54-4a0c-b58d-073c53eba0ca" InformativeScreenshot="04927b6d573caea0701a934935571b45" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Modelo Probabilistico Confirmados' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_103" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="4" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c24a4957-638c-42d0-a422-6f1894c640d1" InformativeScreenshot="93836a5d31357f777f23edfe379c9207" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Probabilidad' role='internal frame' /&gt;&lt;java name='InternalFrame.northPane' role='AWT component' /&gt;&lt;java name='Close' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  Regresiones'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_104" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="33" OffsetY="7" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="925eab27-85b6-49e7-bd98-56ae435d608c" InformativeScreenshot="5acacbdfc1311ef7b62f458a97d4802c" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item  SIR'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_105" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="31" OffsetY="7" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74ff5f5f-32ad-4fa7-b66c-dbfd9608553b" InformativeScreenshot="98e3aad18175a2cf4c7f99bb8165b48a" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='Regresiones' role='menu' /&gt;&lt;java name='SIR' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_106" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="15" OffsetY="12" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1fcf2419-9fc5-4f1c-84fb-728ec3a7f934" InformativeScreenshot="c9cbe653bddd0149aee799e6f05fc624" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='SIR' role='internal frame' /&gt;&lt;java name='Generar Modelo SIR' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_107" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="21" OffsetY="22" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a1dd7b82-82e7-49f8-9ebb-13e52e928cda" InformativeScreenshot="74c51570dbf5c795fb400961bad9ce80" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='Aplicaciones en ejecución' /&gt;&lt;wnd cls='MSTaskListWClass' title='Aplicaciones en ejecución' /&gt;&lt;ctrl name='Aplicaciones en ejecución' role='tool bar' /&gt;&lt;ctrl automationid='{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'drop down button  Abrir'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_108" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="8" OffsetY="18" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4502147-9aec-404b-b8e1-c1f6ae32cfad" InformativeScreenshot="bcbf65559b289208c2dab1acd62b264d" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperToolbar' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Modo' role='split button' /&gt;&lt;ctrl name='Abrir' role='drop down button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_109" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="81" OffsetY="10" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b12e6c4-173e-4e19-a31e-c657f82cf2e5" InformativeScreenshot="e5b58c90fb146dee5f5473b2eec6110b" Selector="&lt;wnd app='snippingtool.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl automationid='40009' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_110" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="7" OffsetY="19" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65fc22e8-d5e3-4e14-b01f-1e0e27879df3" InformativeScreenshot="d1e7f4ee22b6c46461a7b9b25b33adc9" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Guardar recorte' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="4.png[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d7e20c5b-c3b3-4ed4-b2cd-2cec7a718da4">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_111" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="22" OffsetY="4" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4cf60cc4-d3ec-48dc-962e-dd71d5276b28" InformativeScreenshot="45f3b47800e1a6cef2085785d07afb72" Selector="&lt;wnd app='snippingtool.exe' cls='#32770' title='Confirmar Guardar como' /&gt;&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_112" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="26" OffsetY="16" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ed25ff60-dd19-4fbb-b90f-cd3ab93ea403" InformativeScreenshot="b03786f0b17302f62fb32fef4f644b33" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;ctrl idx='1' name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_113" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="14" OffsetY="4" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e7a5f146-7810-46ba-8784-27dd353d22f2" InformativeScreenshot="534fcc1011b988cedb40d300d5db5c26" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='SIR' role='internal frame' /&gt;&lt;java name='InternalFrame.northPane' role='AWT component' /&gt;&lt;java name='Close' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu  More'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_114" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="17" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="85186e78-e96b-4314-aa4e-4b36198d20ba" InformativeScreenshot="b02d5236936f6c88e472e09aa1d24298" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='More' role='menu' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item  About'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_115" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="27" OffsetY="9" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="447508a6-c4d7-4ed7-8801-77fdcc57b315" InformativeScreenshot="e43c80349c6ea8df3c8cdf9e45044f2e" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;&lt;java name='More' role='menu' /&gt;&lt;java name='About' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(5)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_127" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="21" OffsetY="22" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a1dd7b82-82e7-49f8-9ebb-13e52e928cda" InformativeScreenshot="74c51570dbf5c795fb400961bad9ce80" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='Aplicaciones en ejecución' /&gt;&lt;wnd cls='MSTaskListWClass' title='Aplicaciones en ejecución' /&gt;&lt;ctrl name='Aplicaciones en ejecución' role='tool bar' /&gt;&lt;ctrl automationid='{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'drop down button  Abrir'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_128" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="8" OffsetY="18" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4502147-9aec-404b-b8e1-c1f6ae32cfad" InformativeScreenshot="bcbf65559b289208c2dab1acd62b264d" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperToolbar' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Modo' role='split button' /&gt;&lt;ctrl name='Abrir' role='drop down button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'menu item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_129" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="81" OffsetY="10" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b12e6c4-173e-4e19-a31e-c657f82cf2e5" InformativeScreenshot="e5b58c90fb146dee5f5473b2eec6110b" Selector="&lt;wnd app='snippingtool.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Contexto' role='popup menu' /&gt;&lt;ctrl automationid='40009' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_130" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="7" OffsetY="19" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65fc22e8-d5e3-4e14-b01f-1e0e27879df3" InformativeScreenshot="d1e7f4ee22b6c46461a7b9b25b33adc9" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl name='Guardar recorte' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="6.png[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d7e20c5b-c3b3-4ed4-b2cd-2cec7a718da4">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_131" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="22" OffsetY="4" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4cf60cc4-d3ec-48dc-962e-dd71d5276b28" InformativeScreenshot="45f3b47800e1a6cef2085785d07afb72" Selector="&lt;wnd app='snippingtool.exe' cls='#32770' title='Confirmar Guardar como' /&gt;&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_132" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="26" OffsetY="16" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ed25ff60-dd19-4fbb-b90f-cd3ab93ea403" InformativeScreenshot="b03786f0b17302f62fb32fef4f644b33" Selector="&lt;wnd app='snippingtool.exe' cls='Microsoft-Windows-SnipperEditor' title='Herramienta Recortes' /&gt;&lt;ctrl idx='1' name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'browser.exe Inicio'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAYAAAB8gkaAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB+SURBVEhLY2ATUvxPCLNTCY9aRhU8ahlV8KhlcHzx8rX/ZvbeKGLIGCQHUoNNjgGbID4MMuzhoydYLcQnB8JkBSM2QwlZBMJkxxmy4cRYBMIUJRCYJcRYBMJDwzKYRSAamY1NLQwP7gSCz1BCFpJsGUWZGpvh6BibRtKx4n8AVPLUQCXYkBEAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="262006fc-2352-4e5d-95a8-82585b943f4a" Selector="&lt;wnd app='browser.exe' cls='YandexBrowser_WidgetWin_1' title='Inicio | simulator-pandemic — Yandex Browser' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'java.exe Pandemic'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_116" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="1511" OffsetY="20" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="431042f5-d1b4-4bf3-859f-40f9b0676b80" InformativeScreenshot="4ab7d5ed3bb9ffa7eed0bbe9f6ad1498" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='Pandemic Simulator Tool' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'netbeans64.exe Apache'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_117" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="1522" OffsetY="18" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c670d96c-02c1-49fb-a889-13a476a070bf" InformativeScreenshot="8f96cda8f208deb972c5685e7091d4e3" Selector="&lt;wnd app='netbeans64.exe' cls='SunAwtFrame' title='Apache NetBeans IDE 11.3' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+    </Sequence>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'explorer.exe'" sap:VirtualizedContainerService.HintSize="485,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAiCAYAAAAzrKu4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQdSURBVFhHxZY9bJZlFIa7qC2/8hd+vlbjKpMOQMB+QNIEAw74VwVkYJIAIUwMrIQwMJSkiYQBVsBUOxhJNJGgU63RtFW7ENMBi4sDhASatOmx9wPX4/0+fdHG5ovDnXOec+5zzv2e5/1+2p5f8mJ0LF8Tsi8sXZX89mWrE+QrJigvKK6zLLXwvKauD75b4oLPaCPgjZzMEG8sv4RyS1auzb2IK6ac4jo/17Ey5wRmyNJD9VkYRHwvkFVD+SqCg1UMHlDMBYorjoDv+bJHusqySAlIdRaIq4Z6yjInKIZAnZ0ny/bIY4U2JUoxpVDiKoQLXyDOGcDzOoZ7PTz301UKKtAT8E54oTcTSrHOhY8Qr3M4lxhzZJMwT5BUY5oLNILvOZp7TBCX6/NY6csyF1Q2hu9Fh/e/Eve/b8YPw8fiz/GTMfPbqYzpsZ54MLwzLpx+NRqN9UmY90Bw2fNZvvg8SBbmJBEQ+mnfazE9uivO3BqMsYmvY/b+7YzpX/al3OOxt+Lbz4/GZ1f/xoD5nAeufBz95w9Eo7OR5+hhSpuEIcafliLlbjwV9nBkT0yNvRnTPxtGd8fM+Dsxe/dsxB/9C8LM3YvR+/b2PFNzmOVz08Z0kFUAAoV60roBi8HB97vzZgT/GkHsvJdfZxeqa6hrvhh89EEzC/FfAs0V5Ker9G91SAjTe1HXfDE4+N4bWZDmMMu3WNkYSSe35CrnhLmI0tfsJEwHbcvvGrTiKg/1NvODuzBi0pK/LvwaHa24SglTb81EjAuVn94xR0ksN/Z48lKM3LkWP925viCMznGnJj+p9ECYixG4xiTMk/i+vVLY2aGh6L45Gdu/vLcgNG/+Hpd/vFXpoa8L+gsIcj//uyjvGZQv/76vJmoF/BNOfDda6aGX32cIzBeSMO4ZOEF+ubG9/0HY8VLY3MZ8psAtoWHe/zG/Rvn/Juyb8cFaOKcU9uG7O/IMFwcUz59KiQOcRSivshTmOYdz6jbm//u4Nd9a5VPpoiC2RNjTdwxhsiXSxlCMIIGCo0d64tFEX266WGH3Rs7Fti2b8zJcIL50pI0hRgGJRKiwfNW62NTZGY2uJ9h649fK0M6XuhKU63r5iS/rnNf7vsicDRs3xtIVa9NV+iLKpSRh3K0nIcgqTw5LHXl8asTDl4XvFp7XEq98wTpoLIgDT3HPyVcOSxwQc1vC+Txk/lR6kQ8WGOpc53P2TXisLi7f486TnfeOUShwJs9HXICD7zFBzf1PoOBc910gyBsTPPl/by39JMnBCojyjXlevmLKy+dMTrZuW+L7A/qXrKzXVF5+iuRrgIg+lHxdjB74zgNe5zEB0fRJG6M5RYp5MXH3acKZWMknhyis510Q3LQxEuUwH4RPoTeDQ5wzgOd1pUDntS9bHX8BEeGvKVTj33UAAAAASUVORK5CYII=" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e2aff9aa-24e1-457b-969b-4f37e56c29f2" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+    <Sequence DisplayName="Básico" sap:VirtualizedContainerService.HintSize="485,762" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'outline item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_124" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="23" OffsetY="8" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8f6c13ab-a3a6-4d8e-86db-05fba4839225" InformativeScreenshot="32f6fefeee6758cbf457ba475d320fc0" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Explorador de archivos' /&gt;&lt;wnd cls='ShellTabWindowClass' title='Explorador de archivos' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Controlar host' cls='NamespaceTreeControl' title='Control de árbol de espacios de nombres' /&gt;&lt;wnd cls='SysTreeView32' title='Vista en árbol' /&gt;&lt;ctrl name='ProyectoFinalSimulacion (anclado)' role='outline item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'list item  script'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_125" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="48" OffsetY="63" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3653af8f-59d1-45d5-b80a-deaa32c9da94" InformativeScreenshot="63ece92bd348bd7fa3026a8b7133a288" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='ProyectoFinalSimulacion' /&gt;&lt;wnd cls='ShellTabWindowClass' title='ProyectoFinalSimulacion' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Vista de carpetas Shell' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Vista Elementos' cls='DirectUIHWND' /&gt;&lt;ctrl name='Vista Elementos' role='list' /&gt;&lt;ctrl automationid='5' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="%[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="acba1dac-3785-49f0-bee2-3a93254dfa56">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'list item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_126" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="28" OffsetY="17" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8bcff04b-87cc-4f12-9291-388c99aaa386" InformativeScreenshot="4f89047ebbe0db6f4e37eb2ced269da2" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='script' /&gt;&lt;wnd cls='ShellTabWindowClass' title='script' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Vista de carpetas Shell' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Vista Elementos' cls='DirectUIHWND' /&gt;&lt;ctrl name='Vista Elementos' role='list' /&gt;&lt;ctrl automationid='3' /&gt;&lt;ctrl role='graphic' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="%[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="acba1dac-3785-49f0-bee2-3a93254dfa56">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+    </Sequence>
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(10)]" sap:VirtualizedContainerService.HintSize="485,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="485,96" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[d(ctrl)]w">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9eb8babb-1f68-4260-8895-8ef1f1fd5f45">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="485,96" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="%[k(ctrl)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="698e0ade-f2dc-4d4e-9ed9-1eeafa43e56e">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Abrir navegador" sap:VirtualizedContainerService.HintSize="485,351" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="C:\Users\opizarro\Documents\ProyectoFinalSimulacion\reports\reporteinter.pdf">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(15)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[d(ctrl)]w">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d5b32c6b-f21d-4442-aaf2-3fa693c1b8ec">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="485,96" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="%[k(ctrl)]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="55ee3178-3273-495a-823c-e0fde3715111">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+  </Sequence>
+</Activity>

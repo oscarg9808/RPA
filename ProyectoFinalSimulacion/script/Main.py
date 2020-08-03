@@ -7,9 +7,6 @@
 # * Byron Calva
 # * Oscar Pizarro
 
-# In[7]:
-
-
 from reportlab.lib.pagesizes import letter as carta
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, PageBreak)
 from datetime import datetime
@@ -26,8 +23,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 import smtplib
+from automagica import *
+
 
 #---------------------------------------------------------------------------------------------------- DATOS 
+print("Final Exam Started")
 link = "https://es.wikipedia.org/wiki/Pandemia_de_enfermedad_por_coronavirus_de_2020_en_Ecuador"
 datos = requests.get(link) 
 tablas = pd.read_html(link)
@@ -122,14 +122,55 @@ def send_email(destinatario, subject):
     img = MIMEImage(fp.read())
     img.add_header('Content-Disposition','attachment; filename="flyer.jpg"')
     msg.attach(img)
+    cuerpo = "Este es un Flyer generado para la materia de Simulacion \nAutores: Byron Calva, Hernan Leon, Oscar Pizarro"
+    msg.attach(MIMEText(cuerpo,'plain'))
     server = smtplib.SMTP('smtp.gmail.com: 587')
     server.starttls()
     server.login(msg['From'], password) 
     server.sendmail(msg['From'], msg['To'], msg.as_string())
     server.quit()
     print ("Mensaje enviado: %s:" % (msg['To']))
-
+print("Activar VPN....!!!")
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\VPN.xaml')
+print("Procesando....")
+print("Creando Flyer...")
+time.sleep(1)
+print("Enviando correos.")
 for i in correos:
-    send_email(destinatario=i,subject="respondeme: "+str(i))
+    send_email(destinatario=i,subject="Datos Covid-19 (Guayas, Carchi, Sto. Domingo")
     time.sleep(2)
+
+time.sleep(5)
+print("Desactivar VPN..........")
+#-------------------------------------------------------------------------------------------------UiPath
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\VPN.xaml')
+print("Publicando en redes sociales... ")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\publicacion.xaml')
+print("Generando reporte de redes sociales....")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\screen.xaml')
+print("Final Exam successfully completed")
+time.sleep(1)
+print("Final Project Started")
+print("Iniciando proyecto interciclo")
+#implementar
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\intertest.xaml')
+#codigo de netbeans
+print("Login Cuenta Bancaria")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\Bancologin.xaml')
+print("Offimatica y OCR")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\ocr-pdf.xaml')
+#IMPLENTNAR 
+print("Mostrando comparacion")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\Comparacion.xaml')
+#Abrir Word
+print("Consumiendo servicios REST")
+time.sleep(2)
+execute_uipath_process(r'C:\Users\opizarro\Documents\UiPath\Test\consumir_rest.xaml')
+
 

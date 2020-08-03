@@ -1,3 +1,3 @@
 cd "C:\Users\opizarro\Documents\ProyectoFinalSimulacion"
-python .\script\Main.py
-python .\script\mail.py
+C:\ProgramData\Anaconda3\envs\simulacion\python.exe .\script\Main.py
+
