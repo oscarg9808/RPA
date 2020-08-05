@@ -1,6 +1,7 @@
 # RPA
 
 -Tomar en cuenta cambiar los credenciales para cada servicio.
+
 -La base de datos usada para el servicio REST es mariadb, el cual viene con el programa XAMMP(https://www.apachefriends.org/es/index.html) y tiene la siguiente estructura
 
 create database simulacion;
