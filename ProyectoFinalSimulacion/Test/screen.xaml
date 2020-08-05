@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="screen" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,6281" sap2010:WorkflowViewState.IdRef="screen_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="screen" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="881,6390" sap2010:WorkflowViewState.IdRef="screen_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="680,6116" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="680,6225" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Image" Name="fcap" />
       <Variable x:TypeArguments="x:String" Name="fdata" />
@@ -65,11 +65,7 @@
       <Variable x:TypeArguments="ui:Image" Name="tcap" />
       <Variable x:TypeArguments="ui:Image" Name="tcom" />
       <Variable x:TypeArguments="x:String" Name="tdata1" />
-      <Variable x:TypeArguments="x:String" Name="textoWord">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;##REPORTE DE ACTIVIDAD EN REDES SOCIALES##&quot;+Environment.NewLine+&quot;--Reporte de Facebook --&quot;+Environment.NewLine" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="[&quot;##REPORTE DE ACTIVIDAD EN REDES SOCIALES##&quot;+Environment.NewLine+&quot;--Reporte de Facebook --&quot;+Environment.NewLine]" Name="textoWord" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="i" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -77,13 +73,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Abrir navegador" sap:VirtualizedContainerService.HintSize="638,2369" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.facebook.com">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Abrir navegador" sap:VirtualizedContainerService.HintSize="638,2270" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.facebook.com">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,2268" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,2169" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -317,7 +313,6 @@
                 <InArgument x:TypeArguments="x:String">[textoWord+fdata]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="436,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[fdata]" />
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
@@ -638,5 +633,31 @@
       </p:WordApplicationScope.Body>
     </p:WordApplicationScope>
     <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="C:\Users\opizarro\Documents\ProyectoFinalSimulacion\Docs\Social-Network-Report.docx" DisplayName="Iniciar proceso" FileName="C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE" sap:VirtualizedContainerService.HintSize="638,87" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+    <Delay DisplayName="Retraso" Duration="[TimeSpan.FromSeconds(7)]" sap:VirtualizedContainerService.HintSize="638,22" sap2010:WorkflowViewState.IdRef="Delay_18" />
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en imagen 'winword.exe Social-Netw...'" sap:VirtualizedContainerService.HintSize="638,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVEhL7dSxCYAwEIVh93EgB3ER68ziIpYOIIKNZeQVgRRH4B2JhPCKH4UL+EEOp3kJsccEYxOMTTA2wdgEY6Ngx3nFddvNGcIMZ6wZGwXDh+/nNXGlmSf6Ki1AbRRy7VgOaYFC7uVPoBYoNBYsofDM362z3sZY/hKgNo6CdfuD/TPBuEL8AAdCtuZuGiGEAAAAAElFTkSuQmCC" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e34c68a4-d88a-4a7b-93c9-60f8695dafa9" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Social-Network-Report.docx - Word' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
   </Sequence>
 </Activity>
