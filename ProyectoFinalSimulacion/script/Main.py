@@ -114,8 +114,8 @@ correos = df.iloc[:,2]
 
 def send_email(destinatario, subject):
     msg= MIMEMultipart()
-    password = "NUEVA123abcd"
-    msg['From'] = "oscarg9808@gmail.com"
+    password = "password email"
+    msg['From'] = "your email"
     msg['To'] = destinatario
     msg['Subject'] = subject 
     fp = open("1.jpg","rb")
